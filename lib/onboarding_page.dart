@@ -35,15 +35,20 @@ class Onboarding extends StatelessWidget {
                 Text(
                   "Rent a car with us and enjoy the luxury of driving a premium car. Our fleet includes the latest models from top brands, ensuring you have a comfortable and stylish ride.",
                 ),
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.black,
-                    backgroundColor: Colors.white,
-                  ),
-                  child: Text(
-                    "Let\'s Go",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                SizedBox(
+                  height: 54,
+                  width: 320,
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.black,
+                      backgroundColor: Colors.white,
+                    ),
+                    child: Text(
+                      "Let\'s Go",
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                    ),
                   ),
                 ),
               ],
