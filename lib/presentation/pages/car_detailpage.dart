@@ -4,7 +4,8 @@ import 'package:carrentalapp/presentation/widgets/more_card.dart';
 import 'package:flutter/material.dart';
 
 class CarDetailpage extends StatelessWidget {
-  const CarDetailpage({super.key});
+  final Car car;
+  const CarDetailpage({super.key , required this.car});
 
   @override
   Widget build(BuildContext context) {
@@ -24,6 +25,7 @@ class CarDetailpage extends StatelessWidget {
                     pricePerHour: 70)),
             SizedBox(height: 20),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Expanded(
                   child: Container(
@@ -83,24 +85,24 @@ class CarDetailpage extends StatelessWidget {
                 children: [
                   MoreCard(
                       car: Car(
-                          model: "fortune500",
-                          distance: 456,
-                          fuelcapacity: 78,
-                          pricePerHour: 99)),
+                          model  : car.model , 
+                          distance: car.distance + 100,
+                          fuelcapacity: car.fuelcapacity + 20,
+                          pricePerHour: car.pricePerHour + 20)),
+                  SizedBox(height: 5),
+                  MoreCard(
+                      car:  Car(
+                          model  : car.model , 
+                          distance: car.distance + 100,
+                          fuelcapacity: car.fuelcapacity + 20,
+                          pricePerHour: car.pricePerHour + 20)),
                   SizedBox(height: 5),
                   MoreCard(
                       car: Car(
-                          model: "fortune500",
-                          distance: 456,
-                          fuelcapacity: 78,
-                          pricePerHour: 99)),
-                  SizedBox(height: 5),
-                  MoreCard(
-                      car: Car(
-                          model: "fortune500",
-                          distance: 456,
-                          fuelcapacity: 78,
-                          pricePerHour: 99)),
+                          model  : car.model , 
+                          distance: car.distance + 100,
+                          fuelcapacity: car.fuelcapacity + 20,
+                          pricePerHour: car.pricePerHour + 20)),
                 ],
               ),
             )

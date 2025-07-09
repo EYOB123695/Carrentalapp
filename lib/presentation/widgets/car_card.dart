@@ -1,4 +1,5 @@
 import 'package:carrentalapp/data/models/car.dart';
+import 'package:carrentalapp/presentation/pages/car_detailpage.dart';
 import 'package:flutter/material.dart';
 
 class CarCard extends StatelessWidget {
@@ -9,6 +10,14 @@ class CarCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
+      onTap: () { 
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => CarDetailpage(car: car),
+          ),
+        );
+      },
       child: Container(
           margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
           padding: EdgeInsets.all(20),
