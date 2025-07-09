@@ -1,9 +1,9 @@
-class car {
+class Car {
   final String model;
   final double distance;
   final double fuelcapacity;
   final double pricePerHour;
-  car({
+  Car({
     required this.model,
     required this.distance,
     required this.fuelcapacity,
