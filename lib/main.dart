@@ -1,4 +1,5 @@
 import 'package:carrentalapp/firebase_options.dart';
+import 'package:carrentalapp/presentation/pages/Maps_detailpage.dart';
 import 'package:carrentalapp/presentation/pages/car_detailpage.dart';
 import 'package:carrentalapp/presentation/pages/car_list_screen.dart';
 import 'package:carrentalapp/presentation/pages/onboarding_page.dart';
@@ -42,6 +43,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: Onboarding());
+        home: Mapdetailspage() );
   }
 }

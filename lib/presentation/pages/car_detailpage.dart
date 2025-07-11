@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 class CarDetailpage extends StatelessWidget {
   final Car car;
-  const CarDetailpage({super.key , required this.car});
+  const CarDetailpage({super.key, required this.car});
 
   @override
   Widget build(BuildContext context) {
@@ -85,21 +85,21 @@ class CarDetailpage extends StatelessWidget {
                 children: [
                   MoreCard(
                       car: Car(
-                          model  : car.model , 
-                          distance: car.distance + 100,
-                          fuelcapacity: car.fuelcapacity + 20,
-                          pricePerHour: car.pricePerHour + 20)),
-                  SizedBox(height: 5),
-                  MoreCard(
-                      car:  Car(
-                          model  : car.model , 
+                          model: car.model,
                           distance: car.distance + 100,
                           fuelcapacity: car.fuelcapacity + 20,
                           pricePerHour: car.pricePerHour + 20)),
                   SizedBox(height: 5),
                   MoreCard(
                       car: Car(
-                          model  : car.model , 
+                          model: car.model,
+                          distance: car.distance + 100,
+                          fuelcapacity: car.fuelcapacity + 20,
+                          pricePerHour: car.pricePerHour + 20)),
+                  SizedBox(height: 3),
+                  MoreCard(
+                      car: Car(
+                          model: car.model,
                           distance: car.distance + 100,
                           fuelcapacity: car.fuelcapacity + 20,
                           pricePerHour: car.pricePerHour + 20)),
