@@ -1,4 +1,5 @@
 import 'package:carrentalapp/data/models/car.dart';
+import 'package:carrentalapp/presentation/pages/Maps_detailpage.dart';
 import 'package:carrentalapp/presentation/widgets/car_card.dart';
 import 'package:carrentalapp/presentation/widgets/more_card.dart';
 import 'package:flutter/material.dart';
@@ -61,20 +62,31 @@ class CarDetailpage extends StatelessWidget {
                 ),
                 SizedBox(width: 20),
                 Expanded(
-                  child: Container(
-                    height: 170,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        image: DecorationImage(
-                            image: AssetImage("assets/maps.png"),
-                            fit: BoxFit.cover),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black12,
-                            blurRadius: 10,
-                            spreadRadius: 5,
-                          )
-                        ]),
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Mapdetailspage(car: car),
+                        ),
+                      );
+
+                    } ,
+                    child: Container(
+                      height: 170,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          image: DecorationImage(
+                              image: AssetImage("assets/maps.png"),
+                              fit: BoxFit.cover),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black12,
+                              blurRadius: 10,
+                              spreadRadius: 5,
+                            )
+                          ]),
+                    ),
                   ),
                 )
               ],
