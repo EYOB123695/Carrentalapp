@@ -44,24 +44,27 @@ class Onboarding extends StatelessWidget {
                         style: TextStyle(color: Colors.grey, fontSize: 16),
                       ),
                     ),
-                    SizedBox(
-                      height: 54,
-                      width: 318,
-                      child: ElevatedButton(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => CarListScreen()));
-                        },
-                        style: ElevatedButton.styleFrom(
-                          foregroundColor: Colors.black,
-                          backgroundColor: Colors.white,
-                        ),
-                        child: Text(
-                          "Let\'s Go",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 16),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 5),
+                      child: SizedBox(
+                        height: 54,
+                        width: 318,
+                        child: ElevatedButton(
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => CarListScreen()));
+                          },
+                          style: ElevatedButton.styleFrom(
+                            foregroundColor: Colors.black,
+                            backgroundColor: Colors.white,
+                          ),
+                          child: Text(
+                            "Let\'s Go",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 16),
+                          ),
                         ),
                       ),
                     ),
